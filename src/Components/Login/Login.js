@@ -17,8 +17,8 @@ class Login extends Component {
           <div className="Login-Wrapper-Right">
             <div className="Login-Login"><strong>Login</strong></div>
             <div className="Login-Username"><strong>Username</strong></div>
-            <TextInput />
-            <Button />
+            <TextInput setUsername={this.props.setUsername} />
+            <Button login={this.props.login} setPage={this.props.setPage} />
           </div>
         </div>
       </div>
@@ -26,8 +26,5 @@ class Login extends Component {
   }
 }
 
-// Header.propTypes = {
-//   title: PropTypes.string.isRequired,
-// };
 export default Login;
 

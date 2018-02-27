@@ -5,7 +5,13 @@ class TextInput extends Component {
   render() {
     return (
       <div >
-        <input className="TextInput" type="textInput" />
+        <input
+          className="TextInput"
+          type="textInput"
+          onInput={(input) => {
+        this.props.setUsername(input.target.value);
+        }}
+        />
       </div>
     );
   }
