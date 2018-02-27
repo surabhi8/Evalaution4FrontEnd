@@ -1,0 +1,62 @@
+.Login{
+  display:flex;
+  background-color:rgb(22,33,78);
+  flex:1;
+}
+
+.Login-Wrapper{
+  display:flex;
+  height:50%;
+  width:50%;
+  border:1px solid black;
+  margin-top:15%;
+  margin-left:25%; 
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.Login-Wrapper-Left{
+ display: flex;
+ background-color: rgb(68,199,248); 
+ flex: 1;
+ color:black
+}
+.Login-Wrapper-Right{
+  display: flex;
+  background-color: rgb(255,255,255); 
+  flex: 1;
+  color:black;
+ }
+ .Login-Welcome{
+   font-size:250%;
+   text-align: center;
+   margin-top:30%;
+   margin-left:30%;
+ }
+ .Login-To{
+  font-size:250%;
+  text-align: center;
+  margin-top:45%;
+  margin-left:-25%;
+ }
+ .Login-Quizzy{
+  font-size:300%;
+  text-align: center;
+  margin-top:60%;
+  margin-left:-24%;
+  color:white;
+  font-weight:1;
+ }
+
+ .Login-Login{
+  font-size:140%;
+  text-align: center;
+  margin-top:10%;
+  margin-left:5%;
+ }
+
+ .Login-Username{
+   font-size:120%;
+   margin-top:35%;
+   margin-left:-14%;
+ }
