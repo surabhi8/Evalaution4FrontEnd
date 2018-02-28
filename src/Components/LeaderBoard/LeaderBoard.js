@@ -25,7 +25,6 @@ class LeaderBoard extends Component {
   }
 }
 
-
 LeaderBoard.propTypes = {
   score: PropTypes.number.isRequired,
   totalQuestions: PropTypes.number.isRequired,
