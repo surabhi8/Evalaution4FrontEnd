@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Login from '../Login/Login';
 import './App.css';
-import QuestionHeader from '../QuestionHeader/QuestionHeader'
+import QuestionHeader from '../QuestionHeader/QuestionHeader';
+import MCQs from '../MCQs/MCQs';
 
 class App extends Component {
   constructor(props) {
@@ -33,12 +34,12 @@ class App extends Component {
         method: 'GET',
       }).then(response => response.json()).then((questions) => {
         this.setState({
-          questions:questions,
-        })
-          console.log(this.state.questions);
+          questions: questions.message,
+        });
+        console.log(this.state.questions);
+      });
     });
-  });
-}
+  }
   render() {
     if (this.state.screen === 0) {
       return (<div className="App">
@@ -48,9 +49,10 @@ class App extends Component {
       );
     } else if (this.state.screen === 1) {
       return (
-      <div className="App">
-      <QuestionHeader title="Quizzy" userName={this.state.username}/> 
-      </div>
+        <div className="App">
+          <QuestionHeader title="Quizzy" userName={this.state.username} />
+          <MCQs questions={this.state.questions} />
+        </div>
       );
     }
   }
