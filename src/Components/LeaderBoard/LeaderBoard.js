@@ -5,7 +5,6 @@ import Block from '../Block/Block';
 
 class LeaderBoard extends Component {
   render() {
-    console.log('hello');
     return (
       <div className="LeaderBoard">
         <div className="LeaderBoard-Score"><strong>Your Score</strong></div>
@@ -20,5 +19,12 @@ class LeaderBoard extends Component {
     );
   }
 }
+
+
+LeaderBoard.propTypes = {
+  score: PropTypes.number.isRequired,
+  totalQuestions: PropTypes.number.isRequired,
+  topPeople: PropTypes.arrayOf().isRequired,
+};
 
 export default LeaderBoard;

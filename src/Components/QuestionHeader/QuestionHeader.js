@@ -13,6 +13,6 @@ class QuestionHeader extends Component {
 }
 QuestionHeader.propTypes = {
   title: PropTypes.string.isRequired,
-  userName:PropTypes.string.isRequired,
+  userName: PropTypes.string.isRequired,
 };
 export default QuestionHeader;

@@ -42,7 +42,7 @@ class App extends Component {
     fetch('/login', {
       method: 'POST',
       body: JSON.stringify({ userName: this.state.username }),
-    }).then(response => response.json()).then((responseObj) => {
+    }).then(response => response.json()).then(() => {
       fetch('/fetchDetails', {
         method: 'GET',
       }).then(response => response.json()).then((questions) => {
@@ -75,10 +75,12 @@ class App extends Component {
   }
   render() {
     if (this.state.screen === 0) {
-      return (<div className="App">
-        <Header title="Quizzy" />
-        <Login setUsername={this.setUsername} setPage={this.setPage} login={this.login} />
-              </div>
+      return (
+        <div className="App">
+          <Header title="Quizzy" />
+          <Login setUsername={this.setUsername} setPage={this.setPage} login={this.login} />
+        </div>
+
       );
     } else if (this.state.screen === 1) {
       return (

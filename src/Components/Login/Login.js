@@ -26,5 +26,11 @@ class Login extends Component {
   }
 }
 
+Login.propTypes = {
+  setUsername: PropTypes.func.isRequired,
+  setPage: PropTypes.func.isRequired,
+  login: PropTypes.func.isRequired,
+
+};
 export default Login;
 
