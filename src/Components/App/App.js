@@ -33,9 +33,11 @@ class App extends Component {
       }).then(response => response.json()).then((questions) => {
         this.setState({
           questions:questions,
-        }),
+        })
+          console.log(this.state.questions);
     });
-  }
+  });
+}
   render() {
     if (this.state.screen === 0) {
       return (<div className="App">
