@@ -28,7 +28,12 @@ class App extends Component {
       method: 'POST',
       body: JSON.stringify({ userName: this.state.username }),
     }).then(response => response.json()).then((responseObj) => {
-      console.log(responseObj);
+      fetch('/fetchDetails', {
+        method: 'GET',
+      }).then(response => response.json()).then((questions) => {
+        this.setState({
+          questions:questions,
+        }),
     });
   }
   render() {
