@@ -1,0 +1,28 @@
+.LeaderBoard{
+  display: flex;
+  flex-direction:column;
+  flex:1;
+}
+.LeaderBoard-Score{
+  color:orange;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:140%;
+}
+
+.LeaderBoard-UserScore{
+ color:black;
+ font-size:450%;
+  
+}
+
+.SmallerSize{
+color:black;
+font-size:70%;
+}
+
+.LeaderBoard-Heading{
+  color:black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:130%;
+  text-align: center;
+}

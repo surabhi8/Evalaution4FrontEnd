@@ -5,10 +5,17 @@ import './RadioButton.css';
 
 class RadioButton extends Component {
   render() {
-    console.log(this.props.choice);
+    console.log(this.props.id);
     return (
       <div className="RadioButton">
-        <input type="radio" value={this.props.choice} name={this.props.id} />{this.props.choice}
+        <input
+          type="radio"
+          value={this.props.choice}
+          name={this.props.id}
+          onClick={() => {
+            this.props.onChoosingOption(this.props.id, this.props.choice);
+        }}
+        />{this.props.choice}
       </div>
     );
   }
@@ -16,6 +23,8 @@ class RadioButton extends Component {
 
 RadioButton.propTypes = {
   choice: PropTypes.string.isRequired,
+  onChoosingOption: PropTypes.string.isRequired,
+  id: PropTypes.string.isRequired,
 
 };
 export default RadioButton;

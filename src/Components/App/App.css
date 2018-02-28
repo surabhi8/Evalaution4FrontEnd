@@ -5,3 +5,17 @@
   flex:1;
   justify-content: flex-start;
 }
+.Button{
+  border:3px solid black;
+  width:400%;
+  height:12%;
+  margin-top:630%;
+  margin-left:-280%;
+  border-radius:15px;
+  display: flex;
+}
+
+.Button-text{
+  text-align: center;
+  margin-left:40%;
+}

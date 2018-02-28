@@ -1,0 +1,36 @@
+.Block{
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  background:rgb(0,189,229);
+  width:90%;
+  height:10%;
+  border:2px solid black;
+  margin-top:5%;
+}
+
+.Block-Name{
+  display: flex;
+  justify-content: flex-start;
+  flex:1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:130%;
+  color:white;
+  padding:1%;
+}
+
+.Block-Score{
+  display: flex;
+  justify-content:flex-end;
+  flex:1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:130%;
+  color:white;
+  padding:1%;
+  margin-right:1%;
+  
+}
+
+.numbering{
+  color:black;
+}

@@ -13,7 +13,7 @@ class Question extends Component {
         <div className="options">
           {
             options.map(option => (
-              <RadioButton choice={option} id={this.props.question.questionId} />
+              <RadioButton choice={option} id={this.props.question.questionId} onChoosingOption={this.props.onChoosingOption} />
             ))
             }
         </div>
@@ -25,6 +25,6 @@ class Question extends Component {
 Question.propTypes = {
   question: PropTypes.arrayOf().isRequired,
   index: PropTypes.arrayOf().isRequired,
-
+  onChoosingOption: PropTypes.func.isRequired,
 };
 export default Question;

@@ -1,0 +1,14 @@
+.MCQs{
+  display:flex;
+  flex:1;
+  flex-direction:column;
+}
+
+.MCQs-Score{
+  border-radius:10px;
+  width:30%;
+  height:120%;
+  font-size: 140%;
+  padding-left:50%;
+  border: 2px solid center;
+}
