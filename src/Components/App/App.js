@@ -101,6 +101,7 @@ class App extends Component {
           topPeople={this.state.topPeople}
           score={this.state.score}
           totalQuestions={this.state.questions.length}
+          userName={this.state.username}
         />
         <button onClick={() => { this.setPage(0); }}>Play Again</button>
       </div>

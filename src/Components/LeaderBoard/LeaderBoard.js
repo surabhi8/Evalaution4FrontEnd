@@ -13,7 +13,12 @@ class LeaderBoard extends Component {
         </div>
         <div className="LeaderBoard-Heading"><strong>LeaderBoard</strong></div>
         {this.props.topPeople.map((people, index) => (
-          <Block userName={people.userName} score={people.score} index={index + 1} />
+          <Block
+            user={this.props.userName}
+            userName={people.userName}
+            score={people.score}
+            index={index + 1}
+          />
         ))}
       </div>
     );
@@ -25,6 +30,7 @@ LeaderBoard.propTypes = {
   score: PropTypes.number.isRequired,
   totalQuestions: PropTypes.number.isRequired,
   topPeople: PropTypes.arrayOf().isRequired,
+  userName: PropTypes.string.isRequired,
 };
 
 export default LeaderBoard;

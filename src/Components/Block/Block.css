@@ -8,7 +8,16 @@
   border:2px solid black;
   margin-top:5%;
 }
-
+.Block-User{
+  display: flex;
+  flex:1;
+  flex-direction: row;
+  background:purple;
+  width:90%;
+  height:10%;
+  border:2px solid black;
+  margin-top:5%;
+}
 .Block-Name{
   display: flex;
   justify-content: flex-start;
