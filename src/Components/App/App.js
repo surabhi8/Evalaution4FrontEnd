@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Login from '../Login/Login';
 import './App.css';
+import QuestionHeader from '../QuestionHeader/QuestionHeader'
 
 class App extends Component {
   constructor(props) {
@@ -46,8 +47,9 @@ class App extends Component {
       </div>
       );
     } else if (this.state.screen === 1) {
-      return (<div className="App">
-        'Hello'
+      return (
+      <div className="App">
+      <QuestionHeader title="Quizzy" userName={this.state.username}/> 
       </div>
       );
     }
